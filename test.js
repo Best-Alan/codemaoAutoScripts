@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+console.log(fetch)
 
 let headers = {
   "Content-Type": "application/json",
