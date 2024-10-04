@@ -1,3 +1,6 @@
+const fetch = require('node_modules/node-fetch');
+
+console.log(process.env.IDENTITY, process.env.PSW)
 console.log(fetch)
 
 let headers = {
