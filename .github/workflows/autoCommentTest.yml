@@ -20,7 +20,7 @@ jobs:
           node-version: '14' # 可以设置为你需要的 Node.js 版本
 
       - name: Install dependencies
-        run: pkg install nodejs
+        run: npm install node-fetch
 
       - name: Run test.js
         run: node test.js
