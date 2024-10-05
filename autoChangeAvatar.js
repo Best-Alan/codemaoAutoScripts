@@ -38,6 +38,9 @@ console.log(avatarUrl);
   }).then(async (res) => {
     //if (res.ok)
     console.log(res.status)
-    if (!res.ok) console.error('set Avatar', res.status, await res.text())
+    if (!res.ok) {
+      console.error('set Avatar', res.status, await res.text());
+      throw new Error('TypeError')
+    }
   })
 })()
