@@ -1,0 +1,31 @@
+name: Change Avatar Every Minute
+
+on:
+  schedule:
+    - cron: '* * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-test-script:
+    runs-on: ubuntu-latest
+    env:
+      IDENTITY: ${{ secrets.IDENTITY }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+      MONUMENT_VALLEY_AVATARS_URLS: ${{ secrets.MONUMENT_VALLEY_AVATARS_URLS }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22' # 可以设置为你需要的 Node.js 版本
+      
+      - name: Install dependencies
+        run: npm install
+
+      # - name: Install dependencies
+      #   run: npm install node-fetch
+
+      - name: Run autoChangeAvatar.js
+        run: node autoChangeAvatar.js
