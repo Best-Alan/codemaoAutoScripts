@@ -29,7 +29,7 @@ let headers = {
     method: "POST",
     body: JSON.stringify({
       "content": "test",
-      "rich_content": "test_rich_c_from_github_workflow" + (JSON.stringify(process.env)),
+      "rich_content": "test_rich_c_from_github_workflow",
       "source": "WORK_SHOP"
     }),
     headers: headers
