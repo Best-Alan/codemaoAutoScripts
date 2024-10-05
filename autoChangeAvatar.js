@@ -30,13 +30,14 @@ console.log(avatarUrl);
   })
 
   fetch(`https://api.codemao.cn/tiger/v3/web/accounts/info`, {
-    method: "PATCH",
+    method: "P",
     body: JSON.stringify({
       "avatar_url": avatarUrl
     }),
     headers: headers
   }).then(async (res) => {
     //if (res.ok)
-    console.log(res.status, await resText)
+    console.log(res.status)
+    if (!res.ok) console.error('set Avatar', res.status, await res.text())
   })
 })()
