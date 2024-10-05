@@ -30,7 +30,7 @@ console.log(avatarUrl);
   })
 
   fetch(`https://api.codemao.cn/tiger/v3/web/accounts/info`, {
-    method: "P",
+    method: "PATCH",
     body: JSON.stringify({
       "avatar_url": avatarUrl
     }),
