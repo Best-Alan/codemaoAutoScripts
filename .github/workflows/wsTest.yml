@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install dependencies
-        run: npm install ws
+      # - name: Install dependencies
+      #   run: npm install ws
 
       - name: Run websocketTest.js
         run: node websocketTest.js
