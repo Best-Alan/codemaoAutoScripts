@@ -1,27 +1,5 @@
 {
-  "name": "autoComment",
-  "version": "1.0.0",
-  "description": "A GitHub Action that runs a test script every minute.",
-  "main": "test.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Best-Alan/autoComment.git"
-  },
-  "keywords": [
-    "GitHub",
-    "Actions",
-    "Node"
-  ],
-  "author": "Your Name",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Best-Alan/autoComment/issues"
-  },
-  "homepage": "https://github.com/Best-Alan/autoComment#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "ws": "^8.18.0"
   }
 }
