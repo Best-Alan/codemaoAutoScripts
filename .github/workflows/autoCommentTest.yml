@@ -11,6 +11,8 @@ jobs:
     env:
       IDENTITY: ${{ secrets.IDENTITY }}
       PASSWORD: ${{ secrets.PASSWORD }}
+      IDENTITY_1: ${{ secrets.IDENTITY_1 }}
+      PASSWORD_1: ${{ secrets.PASSWORD_1 }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
